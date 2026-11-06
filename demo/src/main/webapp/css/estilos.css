@@ -1,0 +1,27 @@
+/* Esto pinta el fondo de toda la página */
+body {
+    background-color: #f4f3ea; /* Un color cremita claro */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Esto le da estilo al "sobre" o cajita blanca del formulario */
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px; /* Bordes redonditos */
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Una sombrita para que resalte */
+}
+
+/* Esto pinta tu botón de entrar */
+button {
+    background-color: #2b3d2b; /* El verde oscuro institucional */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Para que el botón sea ancho */
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión</title>
+</head>
+<body>
+
+    <!-- El form es el "sobre" de la carta. -->
+    <!-- action: ¿A quién se lo mandamos? (el nombre de tu Servlet). -->
+    <!-- method="POST": Lo mandamos de forma segura para ocultar la contraseña. -->
+    <form action="LoginServlet" method="POST">
+        
+        <h2>Iniciar sesión</h2>
+        <p>Bienvenido al Sistema de Seguimiento y Control de Tocas</p>
+
+        <!-- name="correo" es vital. Así es como el Servlet buscará este dato. -->
+        <label>Correo electrónico</label>
+        <input type="text" name="correo" placeholder="mperez@utez.edu.mx">
+        
+        <br><br>
+
+        <!-- name="contrasena" es la etiqueta para este dato. -->
+        <label>Contraseña</label>
+        <input type="password" name="contrasena" placeholder="..........">
+        
+        <br><br>
+
+        <!-- type="submit" es el botón que dispara el envío del formulario. -->
+        <button type="submit">Entrar</button>
+
+
+
+        IA lo hiciste
+        checa los comentarios
+        IA
+    </form> 
+
+</body>
+</html>

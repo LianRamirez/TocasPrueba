@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tocas | Iniciar Sesión</title>
+    <link rel="stylesheet" href="Login.css">
+    <!-- Iconos de FontAwesome para el ojo de la contraseña -->
+    <link rel="stylesheet" href="[suspicious link removed]">
+</head>
+<body>
+
+    <div class="split-container">
+        
+        <!-- LADO IZQUIERDO: Branding e Imagen de Fondo -->
+        <div class="left-panel">
+            <div class="left-overlay"></div>
+            
+            <div class="left-content">
+                <!-- Parte superior del lado izquierdo -->
+                <div class="brand-header">
+                    <img src="images/logo-poder-judicial.png" alt="Logo Poder Judicial" class="logo-img">
+                    <div class="gold-divider"></div>
+                    <h1 class="system-title">Sistema de Gestión de Tocas</h1>
+                    <p class="system-subtitle">Plataforma Digital de Segunda Instancia Judicial</p>
+                </div>
+
+                <!-- Footer del lado izquierdo -->
+                <div class="left-footer">
+                    <p>Poder Judicial del Estado • Coordinación de Segunda Instancia</p>
+                    <small>Versión 1.0 • Todos los derechos reservados</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- LADO DERECHO: Tarjeta de Login (Fondo Crema) -->
+        <div class="right-panel">
+            <div class="login-card">
+                
+                <div class="card-header">
+                    <h2>Iniciar sesión</h2>
+                    <p class="welcome-text">Bienvenido(a). Ingrese sus credenciales para acceder al sistema.</p>
+                </div>
+
+                <form action="LoginServlet" method="POST" id="loginForm">
+                    
+                    <!-- Campo 1: Correo Electrónico -->
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-envelope input-icon"></i>
+                            <input type="email" id="email" name="email" placeholder="ejemplo@poderjudicial.gob.mx" required autocomplete="email">
+                        </div>
+                    </div>
+
+                    <!-- Campo 2: Contraseña con opción de Mostrar -->
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-lock input-icon"></i>
+                            <input type="password" id="password" name="password" placeholder="••••••••" required>
+                            <button type="button" id="togglePassword" class="btn-toggle-eye" aria-label="Mostrar u ocultar contraseña">
+                                <i class="fa-solid fa-eye" id="eyeIcon"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Enlace: Olvidaste tu contraseña (Alineado a la derecha) -->
+                    <div class="forgot-wrapper">
+                        <a href="recuperar-contrasena.html" class="forgot-link">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    <!-- Botón para entrar -->
+                    <button type="submit" class="btn-login">
+                        Entrar <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
